@@ -1,0 +1,86 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 00TJR:74147 U?
+U 1 1 5F9495B9
+P 2200 1950
+F 0 "U?" H 1950 2500 50  0001 C CNN
+F 1 "74147" H 2400 2500 50  0000 C CNN
+F 2 "" H 2200 1950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS147" H 2200 1950 50  0001 C CNN
+	1    2200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F94BA3D
+P 1750 3500
+F 0 "SW?" H 1750 3800 50  0001 C CNN
+F 1 "SW_Push" H 1750 3700 50  0001 C CNN
+F 2 "" H 1750 3700 50  0001 C CNN
+F 3 "~" H 1750 3700 50  0001 C CNN
+	1    1750 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00TJR:GND #PWR?
+U 1 1 5F94BFDD
+P 1500 3750
+F 0 "#PWR?" H 1500 3500 50  0001 C CNN
+F 1 "GND" H 1550 3550 50  0001 C CNN
+F 2 "" H 1500 3750 50  0000 C CNN
+F 3 "" H 1500 3750 50  0000 C CNN
+	1    1500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F94CF4F
+P 2050 3250
+F 0 "R?" H 2150 3300 50  0001 L CNN
+F 1 "10k" H 2100 3300 50  0000 L CNN
+F 2 "" V 2090 3240 50  0001 C CNN
+F 3 "~" H 2050 3250 50  0001 C CNN
+	1    2050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F94DDF7
+P 2050 3050
+F 0 "#PWR?" H 2050 2900 50  0001 C CNN
+F 1 "+5V" H 2000 3200 50  0000 C CNN
+F 2 "" H 2050 3050 50  0001 C CNN
+F 3 "" H 2050 3050 50  0001 C CNN
+	1    2050 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3050 2050 3100
+Wire Wire Line
+	1950 3500 2050 3500
+Wire Wire Line
+	2050 3500 2050 3400
+Wire Wire Line
+	1550 3500 1500 3500
+Wire Wire Line
+	1500 3500 1500 3750
+Wire Wire Line
+	2050 3500 2400 3500
+Connection ~ 2050 3500
+Text GLabel 2400 3500 2    50   Output ~ 0
+1
+$EndSCHEMATC
